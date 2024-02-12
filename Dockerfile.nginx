@@ -1,0 +1,10 @@
+# Dockerfile for Nginx
+
+# Use image to Nginx
+FROM nginx:latest
+
+# Copy setting to Nginx
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# expose open port 80
+EXPOSE 80
